@@ -1,0 +1,10 @@
+/static/media/
+/invoices/
+/staticfiles/
+SQLITE
+.directory
+*.db
+*.pyc
+*settings.py
+*.blend?*
+*.*~
