@@ -5,6 +5,6 @@ SQLITE
 .directory
 *.db
 *.pyc
-*settings.py
+settings.py
 *.blend?*
 *.*~

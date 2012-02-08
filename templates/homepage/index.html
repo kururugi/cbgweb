@@ -2,9 +2,24 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title></title>
+<title>Reddit Studio</title>
+<link href="{{ STATIC_URL }}css/reset.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/base.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/homepage/homepage.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/homepage/menubar.css" type="text/css" rel="stylesheet" media="screen" />
 </head>
 <body>
-<h1>welcome to redditstudio</h1>
+<div id="mainheader">
+	<div class="centered" id="headercontent">
+		<div id="logowrapper"><div id="logo"></div></div>
+	</div>
+</div>
+
+<!-- Menu bar -->
+<div class="mainmenubar"><div class="mainmenubar_contents"></div></div>
+
+<!-- Main Page -->
+<div class="centered" id="homepage_content"></div>
+<div id="footer"></div>
 </body>
 </html>
