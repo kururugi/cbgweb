@@ -5,5 +5,6 @@ from django.conf.urls.defaults import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', include('homepage.urls')),
+    url(r'^$', 'homepage.views.home_index', name="homepage-index"),
+    url(r'^', include('homepage.urls')),
 )

@@ -1,0 +1,155 @@
+/* Css for an orange-bordered content-container. 
+	Has a header and a body.
+*/
+
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../../fonts/theleagueof-orbitron-13e6a52/webfonts/orbitron-black-webfont.woff') format('woff');
+}
+
+/* style one with cut off corner */
+.orangecontainer{
+	margin: 20px;
+	border: 3px solid #fdc600;
+/*	border: 3px solid #212121; */
+	color: #e3e3e3;
+	border-radius: 1px;
+	position: relative;
+}
+
+.orangecontainer_heading{
+	font-family: Orbitron;
+	font-weight: bold;
+	background-color: #fdc600;
+/*	background-color: #212121; */
+	font-size: 2em;
+	padding: 7px;
+	padding-left: 16px;
+	color: #222222;
+/*	color: grey; */
+	height: 60px;
+	display: table;
+	width: 100%;
+}
+
+.orangecontainer_heading span{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.orangecontainer_content{
+	padding: 15px;
+	padding-bottom: 30px;
+}
+
+.orangecontainer_corner{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	bottom: -3px;
+	right: -3px;
+	border-bottom: 40px solid #fdc600;
+/*	border-bottom: 40px solid #212121; */
+	border-left: 40px solid rgba(1,1,1,0);
+}
+
+.orangecontainer_corner_fill{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	bottom: -5px;
+	right: -5px;
+	border-bottom: 40px solid #2d2d2d;
+	border-left: 40px solid rgba(1,1,1,0);
+}
+
+/* Style 2 In-line style */
+.orangecontainer2{
+	border: 3px solid #fdc600;
+	color: white;
+	border-radius: 1px;
+	position: relative;
+	margin: 20px;
+	display: table;
+}
+
+.orangecontainer2_heading{
+	padding: 4px;
+	font-family: Lato;
+	font-weight: 900;
+	background-color: #fdc600;
+	display: table-cell;
+	width: 30%;
+	min-width: 105px;
+}
+
+.orangecontainer2_content{
+	padding: 4px;
+	padding-left: 10px;
+	display: table-cell;
+	-webkit-box-shadow:inset 0px 0px 13px #000000;
+}
+
+.orangecontainer2_corner_fill{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	bottom: 0px;
+	right: 0px;
+	border-bottom: 15px solid #fdc600;
+	border-left: 15px solid rgba(1,1,1,0);
+}
+
+/* Smaller style - suitable for sidebar */
+.orangecontainerS{
+	margin: 20px;
+	border: 3px solid #fdc600;
+	color: #e3e3e3;
+	border-radius: 1px;
+	position: relative;
+}
+
+.orangecontainerS_heading{
+	font-family: Orbitron;
+	font-weight: bold;
+	background-color: #fdc600;
+	font-size: 1em;
+	padding: 7px;
+	padding-left: 16px;
+	color: #222222;
+	height: 30px;
+	display: table;
+	width: 100%;
+}
+
+.orangecontainerS_heading span{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.orangecontainerS_content{
+	padding: 15px;
+	padding-bottom: 30px;
+}
+
+.orangecontainerS_corner{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	bottom: -3px;
+	right: -3px;
+	border-bottom: 20px solid #fdc600;
+	border-left: 20px solid rgba(1,1,1,0);
+}
+
+.orangecontainerS_corner_fill{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	bottom: -5px;
+	right: -5px;
+	border-bottom: 20px solid #2d2d2d;
+	border-left: 20px solid rgba(1,1,1,0);
+}

@@ -3,23 +3,86 @@
 <head>
 <meta charset="utf-8" />
 <title>Reddit Studio</title>
-<link href="{{ STATIC_URL }}css/reset.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/reset.css" type="text/css" rel="stylesheet" media="screen" /><!-- For consistent css -->
 <link href="{{ STATIC_URL }}css/base.css" type="text/css" rel="stylesheet" media="screen" />
 <link href="{{ STATIC_URL }}css/homepage/homepage.css" type="text/css" rel="stylesheet" media="screen" />
 <link href="{{ STATIC_URL }}css/homepage/menubar.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/content_elements/orange_container.css" type="text/css" rel="stylesheet" media="screen" />
 </head>
 <body>
 <div id="mainheader">
 	<div class="centered" id="headercontent">
 		<div id="logowrapper"><div id="logo"></div></div>
+		<div id="menubar_wrapper">
+		
+			<!-- Menu bar -->
+			<div class="mainmenubar">	
+				<div class="menubar_button"><span class="menubar_button_label">FAQ</span><div class="menubuttonhighlight"></div></div>
+				<div class="menubar_button"><span class="menubar_button_label">Source Code</span><div class="menubuttonhighlight"></div></div>
+				<div class="menubar_button"><span class="menubar_button_label">Contribute</span><div class="menubuttonhighlight"></div></div>
+				<div class="menubar_button"><span class="menubar_button_label">News</span><div class="menubuttonhighlight"></div></div>
+			</div>
+		
+		</div>
 	</div>
 </div>
 
-<!-- Menu bar -->
-<div class="mainmenubar"><div class="mainmenubar_contents"></div></div>
-
-<!-- Main Page -->
-<div class="centered" id="homepage_content"></div>
+<!-- Main Page Content-->
+<div class="centered" id="homepage_content">
+	<div id="homepage_content_left_container">
+	
+		<div class="orangecontainer" id="welcome_container">
+			<div class="orangecontainer_heading"><span>Welcome</span></div>
+			<div class="orangecontainer_content">
+			<p>
+			Bacon ipsum dolor sit amet hamburger short ribs jerky corned beef, ball tip bacon venison. Leberkase capicola brisket sirloin salami, ball tip sausage beef ribs beef. Prosciutto t-bone ribeye, swine pork sausage corned beef pig bacon boudin. Shank jowl bacon leberkase ribeye, sirloin rump hamburger pork chop shoulder swine drumstick boudin. Filet mignon beef cow, tail beef ribs short loin chuck spare ribs pork chop pig tongue brisket. Andouille sirloin meatloaf prosciutto bacon. Ground round boudin ribeye ham, flank beef biltong short loin.
+			</p><br>
+			<p>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspShort ribs shankle venison turducken andouille pork belly. Tail jowl bacon, chuck cow shankle fatback andouille boudin flank meatloaf short loin pork belly filet mignon. Boudin ball tip short loin kielbasa turducken, spare ribs rump ham fatback drumstick ham hock bresaola swine jerky. Jowl pork loin prosciutto, drumstick pancetta ham ground round. Beef ribs andouille pig, capicola tail ribeye chuck flank.
+			</p>
+			<div class="orangecontainer_corner"></div>
+			<div class="orangecontainer_corner_fill"></div>
+			</div>
+		</div>
+		
+	</div>
+	<div id="homepage_content_right_container">
+	
+		<div class="orangecontainerS" id="latestnews_container">
+			<div class="orangecontainerS_heading"><span>Recent Articles</span></div>
+			<div class="orangecontainerS_content">
+			<div id="latestnews"></div>
+			<div class="orangecontainerS_corner"></div>
+			<div class="orangecontainerS_corner_fill"></div>
+			</div>
+		</div>
+	
+		<div class="orangecontainerS" id="FAQ_container">
+			<div class="orangecontainerS_heading"><span>FAQ</span></div>
+			<div class="orangecontainerS_content">
+			<div id="faqsummary">
+				<dl>
+					<dt>First question in the list?</dt>
+					<dd>- Leberkase capicola brisket sirloin salami, ball tip sausage beef ribs beef.</dd>
+					<dt>Whatsup with the content in this box?</dt>
+					<dd>- Still need to develop a write the app to have dynamic content.</dd>
+				</dl>		
+			</div>
+			<div class="orangecontainerS_corner"></div>
+			<div class="orangecontainerS_corner_fill"></div>
+			</div>
+		</div>
+	
+		<div class="orangecontainer2" id="project_status">
+			<div class="orangecontainer2_heading"><span>Project Status</span></div>
+			<div class="orangecontainer2_content">
+			<span>Planning Stages</span>		
+			<div class="orangecontainer2_corner_fill"></div>
+			</div>
+		</div>
+		
+	</div>
+</div>
 <div id="footer"></div>
 </body>
 </html>
