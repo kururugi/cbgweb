@@ -75,13 +75,14 @@ body{
 #homepage_content_right_container{
 	position: absolute;
 	width: 400px;
-	height: 300px;
 	left: 600px;
 }
 
 #welcome_container{
 	width: 500px;
 	font-size: 1.2em;
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
 #latestnews{
@@ -89,8 +90,19 @@ body{
 	height: 150px;
 }
 
-
-/* faq box contents */
+#latestnews_container{
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 350px;
+	float: right;
+}
+/* faq box */
+#FAQ_container{
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 350px;
+	float: right;
+}
 #faqsummary{
 	width: 100%;
 	height: 100px;
@@ -103,9 +115,11 @@ body{
 	padding-left: 20px;
 	padding-bottom: 10px;
 }
-/* END faq box contents */
+/* END faq box */
 
 #project_status{
+	margin-right: 20px;
+	margin-top: 20px;
 	float: right;
 	width: 250px;
 }

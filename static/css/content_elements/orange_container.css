@@ -11,7 +11,6 @@
 
 /* style one with cut off corner */
 .orangecontainer{
-	margin: 20px;
 	border: 3px solid #fdc600;
 /*	border: 3px solid #212121; */
 	color: #e3e3e3;
@@ -71,7 +70,6 @@
 	color: white;
 	border-radius: 1px;
 	position: relative;
-	margin: 20px;
 	display: table;
 }
 
@@ -104,7 +102,6 @@
 
 /* Smaller style - suitable for sidebar */
 .orangecontainerS{
-	margin: 20px;
 	border: 3px solid #fdc600;
 	color: #e3e3e3;
 	border-radius: 1px;
