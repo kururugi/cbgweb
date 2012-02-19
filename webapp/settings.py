@@ -6,6 +6,13 @@ PROJECT_DIR = os.path.dirname(__file__)
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'zer000.cloudbyte@gmail.com'
+EMAIL_HOST_PASSWORD = 'lickingzombiepopsickles'
+EMAIL_PORT = 587
+
 ADMINS = (
 )
 
@@ -109,6 +116,7 @@ INSTALLED_APPS = (
 	'django.contrib.staticfiles',
     'homepage',
     'notepad',
+    'blog',
 	# Uncomment the next line to enable the admin:
 	'django.contrib.admin',
 	# Uncomment the next line to enable admin documentation:

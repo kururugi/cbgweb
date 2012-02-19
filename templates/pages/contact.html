@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="post" action="/contact">{% csrf_token %}
+	<table>
+	{{ contact_form }}
+	<tr>
+	<td><input type="submit" value="Send Mail">  </td>
+	</tr>
+	</table>
+</form>
+{% endblock %}

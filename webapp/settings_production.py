@@ -59,7 +59,7 @@ STATIC_ROOT = ''
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/files/'
+STATIC_URL = '/files/redditstudio/'
 
 # URL prefix for admin static files -- CSS, JavaScript and images.
 # Make sure to use a trailing slash.
@@ -109,13 +109,14 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-#    'django.contrib.auth',
+    'django.contrib.auth',
     'django.contrib.contenttypes',
-#    'django.contrib.sessions',
+    'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
 #    'django.contrib.staticfiles',
     'homepage',
+    'notepad',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:

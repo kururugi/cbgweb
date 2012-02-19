@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Reddit Studio</title>
+<link href="{{ STATIC_URL }}css/reset.css" type="text/css" rel="stylesheet" media="screen" /><!-- For consistent css -->
+<link href="{{ STATIC_URL }}css/base.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/base_content.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/content_elements/menubar.css" type="text/css" rel="stylesheet" media="screen" />
+{% block head %}
+{% endblock %}
+</head>
+<body>
+<div id="mainheader">
+	<div class="centered" id="headercontent">
+		<div id="logowrapper"><div id="logo"><img src="{{ STATIC_URL }}images/homepage/logo.png" alt="" height="200"></div></div>
+		<div id="menubar_wrapper">
+		
+			<!-- Menu bar -->
+			<div class="mainmenubar">	
+				<div class="menubar_button"><a href="" class="menubar_button_link">FAQ</a><div class="menubuttonhighlight"></div></div>
+				<div class="menubar_button"><a href="" class="menubar_button_link">Source Code</a><div class="menubuttonhighlight"></div></div>
+				<div class="menubar_button"><a href="http://www.reddit.com/r/redditstudio" class="menubar_button_link">Forum</a><div class="menubuttonhighlight"></div></div>
+				<div class="menubar_button"><a href="" class="menubar_button_link">Contribute</a><div class="menubuttonhighlight"></div></div>
+				<div class="menubar_button"><a href="" class="menubar_button_link">News</a><div class="menubuttonhighlight"></div></div>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+<!-- Main Page Content-->
+<div class="centered" id="main_content">
+{% block content %}
+{% endblock %}
+</div>
+
+<div class="centered" id="footer">
+	<div class="gutter"> 
+		<h3>Cloudbyte Games</h3> 
+	</div>
+	<div class="columns"> 
+		<div class="col"> 
+			<ul> 
+			<li class="footerIconAbout"><a href="">ABOUT</a></li> 
+			</ul> 
+		</div>
+	
+		<div class="col"> 
+			<ul> 
+			<li class="footerIconGames"><a href="">GAMES</a></li> 
+			</ul> 
+		</div> 
+	
+		<div class="col"> 
+			<ul> 
+			<li class="footerIconContact"><a href="">CONTACT</a></li> 
+			</ul>
+		</div> 
+	</div>
+	<div id="footerFooter">
+		<br>
+		<p>Copyright &copy; 2012 &nbsp;&nbsp;|&nbsp;&nbsp;<span>Cloudbyte Games</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>All rights reserved.</span></p>
+	</div>
+</div>
+</body>
+</html>
