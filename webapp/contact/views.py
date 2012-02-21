@@ -24,8 +24,8 @@ def contact(request):
                 )
             except Exception, e:
                 print e
-                return HttpResponseRedirect(reverse('info_output', kwargs={'msgtype': 'senterr', 'redirect': '/contact'}))
-            return HttpResponseRedirect(reverse('info_output', kwargs={'msgtype': 'sent', 'redirect': '/contact'}))
+                return HttpResponseRedirect(reverse('info_output', kwargs={'msgtype': 'senterr', 'redirect': 'contact-index'}))
+            return HttpResponseRedirect(reverse('info_output', kwargs={'msgtype': 'sent', 'redirect': 'contact-index'}))
     template = loader.get_template('pages/contact.html')
     form = forms.ContactForm(data)
     context = RequestContext(request, {'contact_form': form})
