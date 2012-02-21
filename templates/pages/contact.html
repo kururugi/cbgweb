@@ -1,12 +1,93 @@
 {% extends "base.html" %}
+{% load klass %}
+
+{% block head %}
+<link href="{{ STATIC_URL }}css/content_elements/contactform.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/content_elements/text_input.css" type="text/css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+(function($) {
+
+    /*
+     * Auto-growing textareas; technique ripped from Facebook
+     */
+    $.fn.autogrow = function(options) {
+        
+        this.filter('textarea').each(function() {
+            
+            var $this       = $(this),
+                minHeight   = $this.height(),
+                lineHeight  = $this.css('lineHeight');
+            
+            var shadow = $('<div></div>').css({
+                position:   'absolute',
+                top:        -10000,
+                left:       -10000,
+                width:      $(this).width(),
+                fontSize:   $this.css('fontSize'),
+                fontFamily: $this.css('fontFamily'),
+                lineHeight: $this.css('lineHeight'),
+                resize:     'none'
+            }).appendTo(document.body);
+            
+            var update = function() {
+                
+                var val = this.value.replace(/</g, '&lt;')
+                                    .replace(/>/g, '&gt;')
+                                    .replace(/&/g, '&amp;')
+                                    .replace(/\n/g, '<br/>');
+                
+                shadow.html(val);
+                $(this).css('height', Math.max(shadow.height() + 20, minHeight));
+            }
+            
+            $(this).change(update).keyup(update).keydown(update);
+            
+            update.apply(this);
+            
+        });
+        
+        return this;
+        
+    }
+    
+})(jQuery);
+$(document).ready(function(){
+	$('.textwrapper textarea, .textwrapper input').focus(function(){
+		$(this).parent().toggleClass("textwrapper_focused");
+	});
+	$('.textwrapper textarea, .textwrapper input').blur(function(){
+		$(this).parent().toggleClass("textwrapper_focused");
+	});
+	$('.textwrapper textarea').autogrow();
+});
+</script>
+
+
+{% endblock %}
 
 {% block content %}
-<form method="post" action="/contact">{% csrf_token %}
+<div class="sectionheader">
+	<span>Contact Us</span>
+</div>
+<hr class="topdivider">
+<form method="post" action="/contact" class="centered">{% csrf_token %}
 	<table>
-	{{ contact_form }}
-	<tr>
-	<td><input type="submit" value="Send Mail">  </td>
-	</tr>
+	{% for field in contact_form %}
+		<tr>
+			<td class="fieldlabel">{{ field.label_tag }}</td>
+			<td>{% if field.field.widget|klass == "TextInput" or field.field.widget|klass == "Textarea" %}
+					<div class="textwrapper">{{ field }}</div>
+				 {% else %}
+			      {{ field }}
+			    {% endif %}
+			</td>
+			<td>{{ field.errors }}</td>
+		</tr>
+	{% endfor %}
+	<tr><td><input type="submit" class="ics_button" value="Send Mail"></td></tr>
 	</table>
 </form>
+<br style="clear:both"/>
 {% endblock %}

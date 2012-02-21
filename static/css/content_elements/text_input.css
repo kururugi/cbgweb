@@ -1,0 +1,53 @@
+.textwrapper input, .textwrapper textarea {
+	color: #e3e3e3;
+	font-family: lato;
+	resize: none;
+	background-color: #1f1f1f;
+	border: none;
+	height: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	height: 27px;
+	border: 0px solid #000;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.textwrapper input:focus, .textwrapper textarea:focus{
+	outline: none;
+}
+
+.textwrapper{
+	position: relative;
+	display: inline-block;
+	padding: 1px;
+	background-image: -webkit-linear-gradient(bottom, #919191 4px, #1f1f1f 4px);
+	background-image: -moz-linear-gradient(bottom, #919191 4px, #1f1f1f 4px);
+}
+
+.textwrapper_focused{
+	background-image: -webkit-linear-gradient(bottom, #fdc600 4px, #1f1f1f 4px);
+	background-image: -moz-linear-gradient(bottom, #fdc600 4px, #1f1f1f 4px);
+}
+
+/* submit button */
+.ics_button{
+	height: 30px;
+	width: 153px;
+	font-family: lato;
+	font-size: .95em;
+	background-color: #999999;
+	color: #FFFFFF;
+	border: 1px solid #999999;
+	border-bottom: 1px solid #67676b; 
+	border-radius: 2px;
+	
+}
+
+.ics_button:hover{
+	cursor: pointer;
+	background-color: #fdc600;
+	border: 1px solid #fdc600;
+	border-bottom: 1px solid #aa8500;
+}

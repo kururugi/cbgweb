@@ -1,0 +1,59 @@
+*_{
+	outline: 1px solid yellow;
+}
+
+/* Start header */
+.sectionheader{
+	padding: 10px;
+	padding-top: 30px;
+}
+.sectionheader span{
+	font-size: 1.4em;
+	color: #FFFFFF;
+}
+.topdivider{
+	width: 100%;
+	height: 0px;
+	border: 0px;
+	border-bottom: 3px solid #fdc600;
+}
+/* END header */
+
+form{
+    margin-top: 50px;
+    font-family: lato;
+    color: #e3e3e3;
+    width: 700px;
+}
+
+form table{
+	width: 100%;
+}
+
+form label{
+    padding-right: 10px;
+}
+
+.fieldlabel{
+	max-width: 100px;
+	overflow: hidden;
+}
+
+.errorlist {
+	padding-left: 30px;
+	list-style-type: none;
+	color: darkred;
+}
+
+#id_visitor_name, #id_visitor_address {
+	width: 300px;
+}
+
+#id_message {
+	width: 400px;
+}
+
+tr td{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

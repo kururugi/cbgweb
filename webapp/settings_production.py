@@ -3,6 +3,12 @@
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'zer000.cloudbyte@gmail.com'
+EMAIL_HOST_PASSWORD = open("/home/vitrox/webapps/redditstudio/EMAIL_HOST_PASSWORD").read()
+EMAIL_PORT = 587
+
 ADMINS = (
 )
 
@@ -109,14 +115,16 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.sites',
-    'django.contrib.messages',
-#    'django.contrib.staticfiles',
+	'django.contrib.auth',
+	'django.contrib.contenttypes',
+	'django.contrib.sessions',
+	'django.contrib.sites',
+	'django.contrib.messages',
+#	'django.contrib.staticfiles',
     'homepage',
     'notepad',
+    'blog',
+    'contact',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
