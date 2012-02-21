@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../../fonts/lato-italic.woff') format('woff');
+}
+
+.article_wrapper{
+	padding-bottom: 100px;
+    padding-top: 70px;
+    font-family: lato;
+}
+
+.articleContainer{
+    position: relative;
+    width: 625px;
+}
+
+.dateposted{
+    position: relative;
+    left: -31px;
+    width: 110px;
+    float: left;
+}
+
+.dateposted p{
+    text-align: center;
+}
+
+/* Markdown - http://en.wikipedia.org/wiki/Markdown */
+/* Markdown styling, links, lists, headings etc... */
+.article_content_wrapper p{
+    margin-top: 1em;
+}
+
+.article_content_wrapper a{
+	color: #003f78;
+	text-decoration: none;
+}
+.article_content_wrapper a:hover{
+	text-decoration: underline;
+}
+.article_content_wrapper a:visited{
+	color: #551A8B;
+}
+
+.article_content_wrapper pre{
+	margin-left: 50px;
+	display: inline-block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 20px;
+	max-width: 600px;
+	border-left: 6px solid #3B3B3B;
+}
+
+.article_content_wrapper blockquote{
+    margin-top: 1em;
+	margin-bottom: 1em;
+    padding: 5px;
+    padding-left: 20px;
+    font-style: italic;
+    border-left: 6px solid #3B3B3B;
+}
+/* end markdown styling */
+
+.articleContainer .orangecontainerS_corner{
+	bottom: -3px;
+	right: -3px;
+	border-bottom: 30px solid #fdc600;
+	border-left: 30px solid rgba(1,1,1,0);
+}
+
+.articleContainer .orangecontainerS_corner_fill{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	bottom: -5px;
+	right: -5px;
+	border-bottom: 30px solid #1f1f1f;
+	border-left: 30px solid rgba(1,1,1,0);
+}

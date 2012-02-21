@@ -2,7 +2,7 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Dynalight'), local('Dynalight-Regular'), url('../fonts/lato.woff') format('woff');
+  src: url('../fonts/lato.woff') format('woff');
 }
 
 @font-face {

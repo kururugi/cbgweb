@@ -18,11 +18,11 @@
 		
 			<!-- Menu bar -->
 			<div class="mainmenubar">	
-				<div class="menubar_button"><a href="" class="menubar_button_link">FAQ</a><div class="menubuttonhighlight"></div></div>
-				<div class="menubar_button"><a href="" class="menubar_button_link">Source Code</a><div class="menubuttonhighlight"></div></div>
+				<div class="menubar_button{% if faq %} menubuttonselected{% endif %}"><a href="" class="menubar_button_link">FAQ</a><div class="menubuttonhighlight"></div></div>
+				<div class="menubar_button{% if sourcecode %} menubuttonselected{% endif %}"><a href="" class="menubar_button_link">Source Code</a><div class="menubuttonhighlight"></div></div>
 				<div class="menubar_button"><a href="http://www.reddit.com/r/redditstudio" class="menubar_button_link">Forum</a><div class="menubuttonhighlight"></div></div>
-				<div class="menubar_button"><a href="" class="menubar_button_link">Contribute</a><div class="menubuttonhighlight"></div></div>
-				<div class="menubar_button"><a href="/news" class="menubar_button_link">News</a><div class="menubuttonhighlight"></div></div>
+				<div class="menubar_button{% if contribute %} menubuttonselected{% endif %}"><a href="" class="menubar_button_link">Contribute</a><div class="menubuttonhighlight"></div></div>
+				<div class="menubar_button{% if news %} menubuttonselected{% endif %}"><a href="/news" class="menubar_button_link">News</a><div class="menubuttonhighlight"></div></div>
 			</div>
 		
 		</div>

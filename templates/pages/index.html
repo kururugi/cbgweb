@@ -26,7 +26,13 @@
 		<div class="orangecontainerS" id="latestnews_container">
 			<div class="orangecontainerS_heading"><span>Recent Articles</span></div>
 			<div class="orangecontainerS_content">
-			<div id="latestnews"></div>
+			<div id="latestnews">
+                <ul>
+                {% for entry in articles %}
+                <li><a href="{% url blog-index %}#{{ entry.id }}">{{ entry.headline }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
 			<div class="orangecontainerS_corner"></div>
 			<div class="orangecontainerS_corner_fill"></div>
 			</div>

@@ -1,4 +1,5 @@
-<div class="article_wrapper">
+{% load markup %}
+<div class="article_wrapper" id="{{ article.id }}">
     <div class="orangebox dateposted">
         <div class="orangebox_corner"></div>
         <div class="orangebox_topfilla"></div>
@@ -8,7 +9,7 @@
 	    <div class="orangecontainerS_heading"><span>{{ article.headline }}</span></div>
 	    <div class="orangecontainerS_content">
 	    <div class="article_content_wrapper">
-        {{ article.content }}
+        {{ article.content|markdown }}
 	    </div>
 	    <div class="orangecontainerS_corner"></div>
 	    <div class="orangecontainerS_corner_fill"></div>

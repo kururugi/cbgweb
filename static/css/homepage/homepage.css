@@ -24,7 +24,7 @@
 /* news box */
 #latestnews{
 	width: 100%;
-	height: 150px;
+	max-height: 150px;
 }
 
 #latestnews_container{
@@ -33,6 +33,24 @@
 	width: 100%;
 	float: right;
 }
+
+#latestnews ul{
+    list-style: none;
+}
+
+#latestnews li{
+    padding: 5px;
+}
+
+#latestnews a{
+    color: #E3E3E3;
+    text-decoration: none;
+}
+
+#latestnews a:hover{
+    text-decoration: underline;
+}
+
 /* END news box */
 /* faq box */
 #FAQ_container{

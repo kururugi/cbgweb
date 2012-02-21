@@ -47,6 +47,23 @@
 	background-color: grey;
 }
 
+.menubuttonselected:hover .menubuttonhighlight{
+	background-color: #fdc600;
+}
+
+.menubuttonselected:hover a{
+	color: grey;
+}
+
+.menubuttonselected a{
+	pointer-events: none;
+   cursor: default;
+}
+
+.menubuttonselected .menubuttonhighlight{
+	background-color: #fdc600;
+}
+
 .mainmenubar .menubar_button:first-child {
 	border-right: 1px solid #3b3b3b;
 }
