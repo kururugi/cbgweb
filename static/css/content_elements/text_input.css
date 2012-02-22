@@ -24,11 +24,15 @@
 	padding: 1px;
 	background-image: -webkit-linear-gradient(bottom, #919191 4px, #1f1f1f 4px);
 	background-image: -moz-linear-gradient(bottom, #919191 4px, #1f1f1f 4px);
+    background-image: -o-linear-gradient(bottom, #919191 4px, #1f1f1f 4px);
+    background-image: linear-gradient(bottom, #919191 4px, #1f1f1f 4px);
 }
 
 .textwrapper_focused{
 	background-image: -webkit-linear-gradient(bottom, #fdc600 4px, #1f1f1f 4px);
 	background-image: -moz-linear-gradient(bottom, #fdc600 4px, #1f1f1f 4px);
+    background-image: -o-linear-gradient(bottom, #fdc600 4px, #1f1f1f 4px);
+    background-image: linear-gradient(bottom, #fdc600 4px, #1f1f1f 4px);
 }
 
 /* submit button */
