@@ -4,6 +4,10 @@
 	This will usually not go as planned.
 */
 
+#main_content{
+	padding-bottom: 130px;
+}
+
 #homepage_content_left_container{
 	float: left;
 	width: 600px;
