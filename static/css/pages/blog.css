@@ -1,0 +1,33 @@
+#article_pages{
+    display: table;
+    width: 100%;
+}
+
+#article_pages .cell{
+    width: 33%;
+    display: table-cell;
+    padding: 20px;
+}
+
+#article_pages #nextcontainer{
+    text-align: right;
+}
+
+#archivecontainer{
+    text-align: center;
+}
+
+#article_pages a{
+    font-size: 1.3em;
+    color: #E3E3E3;
+    text-decoration: none;
+}
+
+#article_pages a:hover{
+    text-decoration: underline;
+}
+
+#archivecontainer a{
+    font-size: 1em;
+    color: grey;
+}
