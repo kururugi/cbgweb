@@ -19,7 +19,7 @@ def contact(request):
                     "AUTO: cloudbyte.com user regarding: " + form.cleaned_data['attention'],
                     "Message from %s:\n%s" % (form.cleaned_data['visitor_address'], form.cleaned_data['message']),
                     form.cleaned_data['visitor_address'],
-                    ['zer000.cloudbyte@gmail.com'],
+                    ['cloudbytegames@gmail.com'],
                     fail_silently=False
                 )
             except Exception, e:
