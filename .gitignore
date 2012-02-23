@@ -3,6 +3,7 @@
 /staticfiles/
 SQLITE
 .directory
+.emailpwd
 *.db
 *.pyc
 *.blend?*

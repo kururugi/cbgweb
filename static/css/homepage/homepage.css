@@ -19,11 +19,15 @@
 	left: 600px;
 }
 
+.box{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 #welcome_container{
 	width: 500px;
 	font-size: 1.2em;
-	margin-top: 20px;
-	margin-left: 20px;
 }
 /* news box */
 #latestnews{
@@ -32,8 +36,6 @@
 }
 
 #latestnews_container{
-	margin-top: 20px;
-	margin-right: 20px;
 	width: 100%;
 	float: right;
 }
@@ -58,8 +60,6 @@
 /* END news box */
 /* faq box */
 #FAQ_container{
-	margin-top: 20px;
-	margin-right: 20px;
 	width: 100%;
 	float: right;
 }
@@ -78,8 +78,6 @@
 /* END faq box */
 
 #project_status{
-	margin-right: 20px;
-	margin-top: 20px;
 	float: right;
 	width: 250px;
 }

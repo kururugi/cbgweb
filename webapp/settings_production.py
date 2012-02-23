@@ -6,7 +6,7 @@ TEMPLATE_DEBUG = DEBUG
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'zer000.cloudbyte@gmail.com'
-EMAIL_HOST_PASSWORD = open("/home/vitrox/webapps/redditstudio/EMAIL_HOST_PASSWORD").read()
+EMAIL_HOST_PASSWORD = open("/home/vitrox/webapps/redditstudio/.EMAIL_HOST_PASSWORD").read()
 EMAIL_PORT = 587
 
 ADMINS = (
@@ -19,7 +19,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'vitrox',                      # Or path to database file if using sqlite3.
         'USER': 'vitrox',                      # Not used with sqlite3.
-        'PASSWORD': 'fourchannel',                  # Not used with sqlite3.
+        'PASSWORD': open("/home/vitrox/webapps/redditstudio/.DATABASE_PASSWORD").read(),                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
