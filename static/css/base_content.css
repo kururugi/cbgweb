@@ -48,7 +48,7 @@ body{
 	right: -1px;
 }
 
-#maincontent_wrapper{
+.maincontent_wrapper{
     padding: 100px;
     padding-top: 0px;
     padding-bottom: 0px;

@@ -31,39 +31,41 @@
 </div>
 
 <!-- Main Page Content-->
-<div id="maincontent_wrapper">
+<div class="maincontent_wrapper">
 	<div class="centered" id="main_content">
 	{% block content %}
 	{% endblock %}
 	</div>
 </div>
 
-<div class="centered" id="footer">
-	<div class="gutter"> 
-		<h3>Cloudbyte Games</h3> 
-	</div>
-	<div class="columns"> 
-		<div class="col"> 
-			<ul> 
-			<li class="footerIconAbout"><a href="">ABOUT</a></li> 
-			</ul> 
+<div class="maincontent_wrapper">
+	<div class="centered" id="footer">
+		<div class="gutter"> 
+			<h3>Cloudbyte Games</h3> 
 		</div>
-	
-		<div class="col"> 
-			<ul> 
-			<li class="footerIconGames"><a href="">GAMES</a></li> 
-			</ul> 
-		</div> 
-	
-		<div class="col"> 
-			<ul> 
-			<li class="footerIconContact"><a href="{% url contact-index %}">CONTACT</a></li> 
-			</ul>
-		</div> 
-	</div>
-	<div id="footerFooter">
-		<br>
-		<p>Copyright &copy; 2012 &nbsp;&nbsp;|&nbsp;&nbsp;<span>Cloudbyte Games</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>All rights reserved.</span></p>
+		<div class="columns"> 
+			<div class="col"> 
+				<ul> 
+				<li class="footerIconAbout"><a href="">ABOUT</a></li> 
+				</ul> 
+			</div>
+		
+			<div class="col"> 
+				<ul> 
+				<li class="footerIconGames"><a href="">GAMES</a></li> 
+				</ul> 
+			</div> 
+		
+			<div class="col"> 
+				<ul> 
+				<li class="footerIconContact"><a href="{% url contact-index %}">CONTACT</a></li> 
+				</ul>
+			</div> 
+		</div>
+		<div id="footerFooter">
+			<br>
+			<p>Copyright &copy; 2012 &nbsp;&nbsp;|&nbsp;&nbsp;<span>Cloudbyte Games</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>All rights reserved.</span></p>
+		</div>
 	</div>
 </div>
 </body>
