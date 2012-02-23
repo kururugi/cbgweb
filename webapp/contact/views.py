@@ -17,9 +17,9 @@ def contact(request):
             try:
                 send_mail(
                     "AUTO: cloudbyte.com user regarding: " + form.cleaned_data['attention'],
-                    "Message from cloudbytegames.com visitor:\n" + form.cleaned_data['message'],
+                    "Message from %s:\n%s" % (form.cleaned_data['visitor_address'], form.cleaned_data['message']),
                     form.cleaned_data['visitor_address'],
-                    ['cloudbytegames@gmail.com'],
+                    ['zer000.cloudbyte@gmail.com'],
                     fail_silently=False
                 )
             except Exception, e:
