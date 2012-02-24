@@ -11,6 +11,12 @@
     font-family: lato;
 }
 
+.article_content_wrapper{
+    /*max-height: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;*/
+}
+
 .articleContainer{
     position: relative;
     width: 625px;

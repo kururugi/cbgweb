@@ -14,7 +14,6 @@ register = template.Library()
 @register.filter('markdown')
 def mark(txt):
     html = markdown.markdown(txt, [ImageExtension()])
-    print html
     return mark_safe(html)
 
 def processimg(e):
@@ -54,12 +53,14 @@ def processimg(e):
 
 class MyTreeprocessor(markdown.treeprocessors.Treeprocessor):
     def run(self, root):
-        for i in root:
-            for j in root.getiterator():
-                if j.tag == "img":
-                   processimg(j)
+        images = []
+        for j in root.getiterator("img"):
+            images.append(j)
+        for image in images:
+            processimg(image)
         return root
 
 class ImageExtension(markdown.Extension):
     def extendMarkdown(self, md, md_globals):
         md.treeprocessors['image'] = MyTreeprocessor()
+
