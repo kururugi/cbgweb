@@ -2,6 +2,7 @@
 {% block head %}
 <link href="{{ STATIC_URL }}css/content_elements/blog_article.css" type="text/css" rel="stylesheet" media="screen" />
 <link href="{{ STATIC_URL }}css/content_elements/orange_container.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/content_elements/markdown.css" type="text/css" rel="stylesheet" media="screen" />
 <link href="{{ STATIC_URL }}css/pages/blog.css" type="text/css" rel="stylesheet" media="screen" />
 {% endblock %}
 {% block content %}
@@ -11,13 +12,13 @@
 <div id="article_pages">
 	<div class="cell" id="previouscontainer">
 		{% if page.has_next %}
-		<div class="pagelink_container"><span><a href="{% url blog-index page=page.next_page_number %}" >Previous</a></span></div>
+		<div class="pagelink_container"><span><a class="whitelink" href="{% url blog-index page=page.next_page_number %}" >Previous</a></span></div>
 		{% endif %}
 	</div>
-    <div class="cell" id="archivecontainer"><a href="">archive</a></div>
+    <div class="cell" id="archivecontainer"><a class="whitelink" href="">archive</a></div>
     <div class="cell" id="nextcontainer">
         {% if page.has_previous %}
-        <div class="pagelink_container"><span><a href="{% url blog-index page=page.previous_page_number %}" >Next</a></span></div>
+        <div class="pagelink_container"><span><a class="whitelink" href="{% url blog-index page=page.previous_page_number %}" >Next</a></span></div>
 	    {% endif %}
     </div>
 </div>

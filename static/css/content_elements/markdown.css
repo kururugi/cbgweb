@@ -1,0 +1,64 @@
+/* Markdown - http://en.wikipedia.org/wiki/Markdown */
+/* Markdown styling, links, lists, headings etc... */
+.article_content_wrapper p{
+    margin-top: 1em;
+    line-height: 1.4em;
+    width: 100%;
+}
+
+.article_content_wrapper a{
+	color: #003f78;
+	text-decoration: none;
+}
+.article_content_wrapper a:hover{
+	text-decoration: underline;
+}
+.article_content_wrapper a:visited{
+	color: #551A8B;
+}
+
+.article_content_wrapper pre{
+	margin-left: 50px;
+	display: inline-block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 20px;
+	max-width: 600px;
+	border-left: 6px solid #3B3B3B;
+}
+
+.article_content_wrapper blockquote{
+    margin-top: 1em;
+	margin-bottom: 1em;
+    padding: 5px;
+    padding-left: 20px;
+    font-family: Lato-italic;
+    font-style: italic;
+    border-left: 6px solid #3B3B3B;
+}
+
+.inlineImageWrapper{
+    width: 100%;
+    text-align: center;
+    font-size: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.inlineImageWrapper .inlineImageContent{
+    display: inline-block;
+    padding: 5px;
+}
+
+.inlineImageWrapper .inlineImageContent{
+    border: 1px solid #3B3B3B;
+}
+
+.inlinePhotoCaption{
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 15px;
+}
+
+/* end markdown styling */

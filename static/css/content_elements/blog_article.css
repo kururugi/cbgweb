@@ -16,6 +16,24 @@
     width: 625px;
 }
 
+.orangecontainerS_heading span{
+	width: 100%;
+	height: 100%;
+}
+
+.orangecontainerS_heading a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	line-height: 30px;
+	color: #222222;
+}
+
+.orangecontainerS_heading a:hover{
+	text-decoration: none;
+	color: #E3E3E3;
+}
+
 .dateposted{
     position: relative;
     left: -31px;
@@ -26,45 +44,6 @@
 .dateposted p{
     text-align: center;
 }
-
-/* Markdown - http://en.wikipedia.org/wiki/Markdown */
-/* Markdown styling, links, lists, headings etc... */
-.article_content_wrapper p{
-    margin-top: 1em;
-    line-height: 1.4em;
-}
-
-.article_content_wrapper a{
-	color: #003f78;
-	text-decoration: none;
-}
-.article_content_wrapper a:hover{
-	text-decoration: underline;
-}
-.article_content_wrapper a:visited{
-	color: #551A8B;
-}
-
-.article_content_wrapper pre{
-	margin-left: 50px;
-	display: inline-block;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	padding: 20px;
-	max-width: 600px;
-	border-left: 6px solid #3B3B3B;
-}
-
-.article_content_wrapper blockquote{
-    margin-top: 1em;
-	margin-bottom: 1em;
-    padding: 5px;
-    padding-left: 20px;
-    font-family: Lato-italic;
-    font-style: italic;
-    border-left: 6px solid #3B3B3B;
-}
-/* end markdown styling */
 
 .articleContainer .orangecontainerS_corner{
 	bottom: -3px;

@@ -17,7 +17,6 @@ We are from all parts of the world and all aspects of life. We come together wit
 one goal in mind to make mind blowing, genre shattering games. We are always
 looking for new blood to help us out. Feel free to check us out or come in our IRC
 and poke around.
-something like that?
 			</p>
 			<div class="orangecontainer_corner"></div>
 			<div class="orangecontainer_corner_fill"></div>
@@ -33,7 +32,7 @@ something like that?
 			<div id="latestnews">
                 <ul>
                 {% for entry in articles %}
-                <li><a href="{% url blog-index %}#{{ entry.id }}">{{ entry.headline }}</a></li>
+                <li><a href="{% url blog-articledetail articleid=entry.id %}">{{ entry.headline }}</a></li>
                 {% endfor %}
                 </ul>
             </div>

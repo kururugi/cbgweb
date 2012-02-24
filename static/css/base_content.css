@@ -12,6 +12,19 @@
   src: url('../fonts/lato-extrabold.woff') format('woff');
 }
 
+/* styled white link, used all around this site */
+.whitelink{
+    font-size: 1.3em;
+    color: #E3E3E3;
+    text-decoration: none;
+}
+
+.whitelink:hover{
+    text-decoration: underline;
+}
+
+/* END styled white link */
+
 body{
 	font-family: Lato;
 	background-color: black;

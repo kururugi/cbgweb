@@ -28,7 +28,9 @@
 #welcome_container{
 	width: 500px;
 	font-size: 1.2em;
+	line-height: 23px;
 }
+
 /* news box */
 #latestnews{
 	width: 100%;

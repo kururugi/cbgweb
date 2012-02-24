@@ -4,6 +4,7 @@
 {% block head %}
 <link href="{{ STATIC_URL }}css/pages/contactform.css" type="text/css" rel="stylesheet" media="screen" />
 <link href="{{ STATIC_URL }}css/content_elements/text_input.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/content_elements/sectionheader.css" type="text/css" rel="stylesheet" media="screen" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 <script type="text/javascript">
@@ -86,8 +87,8 @@ $(document).ready(function(){
 			<td>{{ field.errors }}</td>
 		</tr>
 	{% endfor %}
-	<tr><td><input type="submit" class="ics_button" value="Send Mail"></td></tr>
 	</table>
+    <div id="contact_submit"><input type="submit" class="ics_button" value="Send Mail"></div>
 </form>
 <br style="clear:both"/>
 {% endblock %}

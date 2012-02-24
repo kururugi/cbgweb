@@ -55,9 +55,9 @@
 	color: grey;
 }
 
-.menubuttonselected a{
-	pointer-events: none;
-   cursor: default;
+.menubuttonselected_ a{
+    pointer-events: none;
+    cursor: default;
 }
 
 .menubuttonselected .menubuttonhighlight{

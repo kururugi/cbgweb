@@ -1,4 +1,4 @@
-{% load markup %}
+{% load mark %}
 <div class="article_wrapper" id="{{ article.id }}">
     <div class="orangebox dateposted">
         <div class="orangebox_corner"></div>
@@ -6,13 +6,15 @@
         <div class="orangebox_content"><p>{{ article.pub_date }}</p></div>
     </div>
     <div class="orangecontainerS centered articleContainer">
-	    <div class="orangecontainerS_heading"><span>{{ article.headline }}</span></div>
-	    <div class="orangecontainerS_content">
-	    <div class="article_content_wrapper">
-        {{ article.content|markdown }}
+	    <div class="orangecontainerS_heading">
+		    <span><a class="whitelink" href="{% url blog-articledetail articleid=article.id %}">{{ article.headline }}</a></span>
 	    </div>
-	    <div class="orangecontainerS_corner"></div>
-	    <div class="orangecontainerS_corner_fill"></div>
+	    <div class="orangecontainerS_content">
+		    <div class="article_content_wrapper">
+			    {{ article.content|markdown }}
+		    </div>
+		    <div class="orangecontainerS_corner"></div>
+		    <div class="orangecontainerS_corner_fill"></div>
 	    </div>
     </div>
 </div>

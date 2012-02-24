@@ -1,0 +1,18 @@
+#sectionheader{
+	position: relative;
+}
+#article_date{
+	float: right;
+	font-weight: 400;
+	font-size: .6em;
+	padding: 10px;
+}
+
+#article_date span{
+	color: grey;
+}
+
+.article_content_wrapper{
+	padding: 130px;
+	color: #E3E3E3;
+}

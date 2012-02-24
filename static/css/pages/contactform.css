@@ -2,24 +2,6 @@
 	outline: 1px solid yellow;
 }
 
-/* Start header */
-.sectionheader{
-	padding: 10px;
-	padding-top: 30px;
-}
-.sectionheader span{
-    font-weight: 900;
-	font-size: 1.4em;
-	color: #FFFFFF;
-}
-.topdivider{
-	width: 100%;
-	height: 0px;
-	border: 0px;
-	border-bottom: 3px solid #fdc600;
-}
-/* END header */
-
 form{
     margin-top: 50px;
     font-family: lato;
@@ -33,10 +15,11 @@ form table{
 
 form label{
     padding-right: 10px;
+    display: block;
 }
 
 .fieldlabel{
-	max-width: 100px;
+    width: 100px;
 	overflow: hidden;
 }
 
@@ -57,4 +40,9 @@ form label{
 tr td{
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+#contact_submit{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

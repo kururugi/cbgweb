@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load mark %}
+{% block head %}
+<link href="{{ STATIC_URL }}css/pages/blog_detail.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/content_elements/sectionheader.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/content_elements/markdown.css" type="text/css" rel="stylesheet" media="screen" />
+{% endblock %}
+{% block content %}
+<div class="sectionheader">
+	<span>{{ article.headline }}</span>
+	<div id="article_date"><span>{{ article.pub_date }}</span></div>
+</div>
+<hr class="topdivider">
+<div class="article_content_wrapper">
+{{ article.content|markdown }}
+</div>
+{% endblock %}
