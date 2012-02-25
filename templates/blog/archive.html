@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="{{ STATIC_URL }}css/pages/blog_archive.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/content_elements/sectionheader.css" type="text/css" rel="stylesheet" media="screen" />
+{% endblock %}
+{% block content %}
+<div class="sectionheader">
+	<span>Blog Archive</span>
+</div>
+<hr class="topdivider">
+{% for article in articles %}
+<a class="blog-link" href="{% url blog-articledetail articleid=article.id %}"><span><span>{{ article.pub_date }}</span><span>{{ article.headline }}</span></span></a>
+{% endfor %}
+
+{% endblock %}

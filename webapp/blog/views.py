@@ -24,4 +24,7 @@ def article_detail(request, articleid):
     return HttpResponse(template.render(context))
 
 def blog_archive(request):
-    pass
+    articles = Entry.objects.all()
+    template = loader.get_template('blog/archive.html')
+    context = RequestContext(request, {"articles": articles})
+    return HttpResponse(template.render(context))

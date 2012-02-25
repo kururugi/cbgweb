@@ -15,7 +15,7 @@
 		<div class="pagelink_container"><span><a class="whitelink" href="{% url blog-index page=page.next_page_number %}" >Previous</a></span></div>
 		{% endif %}
 	</div>
-    <div class="cell" id="archivecontainer"><a class="whitelink" href="">archive</a></div>
+    <div class="cell" id="archivecontainer"><a class="whitelink" href="{% url blog-archive %}">archive</a></div>
     <div class="cell" id="nextcontainer">
         {% if page.has_previous %}
         <div class="pagelink_container"><span><a class="whitelink" href="{% url blog-index page=page.previous_page_number %}" >Next</a></span></div>

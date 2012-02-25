@@ -1,0 +1,26 @@
+.blog-link span span{
+    padding-left: 100px;
+}
+
+#main_content{
+    padding-bottom: 100px;
+}
+
+.topdivider{
+    margin-bottom: 30px;
+}
+
+.blog-link{
+    display: inline-block;
+    width: 100%;
+    padding-left: 100px;
+	color: #003f78;
+	text-decoration: none;
+    font-size: 1.4em;
+}
+.blog-link:hover{
+	text-decoration: underline;
+}
+.blog-link:visited{
+	color: #551A8B;
+}
