@@ -9,7 +9,7 @@
 </div>
 <hr class="topdivider">
 {% for article in articles %}
-<a class="blog-link" href="{% url blog-articledetail articleid=article.id %}"><span><span>{{ article.pub_date }}</span><span>{{ article.headline }}</span></span></a>
+<a class="blog-link" href="{% url blog-articledetail articleid=article.id %}"><span><span>{{ article.pub_date }}</span><span>"{{ article.headline }}"</span></span></a>
 {% endfor %}
 
 {% endblock %}
