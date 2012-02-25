@@ -1,5 +1,8 @@
 /* Markdown - http://en.wikipedia.org/wiki/Markdown */
 /* Markdown styling, links, lists, headings etc... */
+.article_content_wrapper{
+    color: #E3E3E3;
+}
 .article_content_wrapper p{
     margin-top: 1em;
     line-height: 1.4em;

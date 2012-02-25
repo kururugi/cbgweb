@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load mark %}
+{% block head %}
+<link href="{{ STATIC_URL }}css/pages/contribute.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/content_elements/sectionheader.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/content_elements/markdown.css" type="text/css" rel="stylesheet" media="screen" />
+{% endblock %}
+{% block content %}
+<div class="sectionheader">
+	<span>How you can help us out!</span>
+</div>
+<hr class="topdivider">
+<div class="article_content_wrapper">
+{{ content|markdown }}
+</div>
+{% endblock %}
