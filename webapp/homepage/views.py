@@ -14,5 +14,5 @@ def home_index(request):
 def contribute(request):
     content = get_object_or_404(Note, pk=2)
     template = loader.get_template('pages/contribute.html')
-    context = RequestContext(request, {'content': content.text})
+    context = RequestContext(request, {'content': content.text, 'contribute': True})
     return HttpResponse(template.render(context))
