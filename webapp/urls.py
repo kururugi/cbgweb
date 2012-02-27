@@ -11,5 +11,6 @@ urlpatterns = patterns('',
     url(r'^message/', include('stdmessage.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^bronana/$', 'notepad.views.noteView', {'noteid': 1}),
+    url(r'^googleba3d6537ed63b77d.html', 'homepage.views.google'),
     url(r'^', include('homepage.urls')),
 )

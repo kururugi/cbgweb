@@ -16,3 +16,7 @@ def contribute(request):
     template = loader.get_template('pages/contribute.html')
     context = RequestContext(request, {'content': content.text, 'contribute': True})
     return HttpResponse(template.render(context))
+
+def google(request):
+    template = loader.get_template('googleapps.html')
+    return HttpResponse(template.render(RequestContext(request, {})))
