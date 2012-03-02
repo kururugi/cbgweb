@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block head %}
+<script type='text/javascript' src='{{ STATIC_URL }}scripts/jquery.js'></script>
+<script type='text/javascript' src='{{ STATIC_URL }}scripts/faq.js'></script>
+<link href="{{ STATIC_URL }}css/faq/faq.css" type="text/css" rel="stylesheet" media="screen" />
+{% endblock %}
+{% block content %}
+<br/><br/>
+<div id='comments'>
+{% for comment in entries %}
+{% if comment.level == 15 %} <br/> {% endif %}
+    {% include "faq/comment.html" %}
+    {% endfor %}
+</div>
+		<textarea id='comment_reply_field_0_text' class='comment_reply_field_text'>Enter Reply</textarea>
+		<span id='comment_reply_field_0_submit' class='comment_clickable comment_reply_field_submit'>Submit</span> 
+{% endblock %}

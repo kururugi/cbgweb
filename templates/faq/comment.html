@@ -1,0 +1,17 @@
+<div style='margin-left:{{comment.level}}px' id="comment_{{ comment.id }}" class='comment'>
+	<img src='{{ STATIC_URL }}images/faq/up2.png' id='comment_upvote_{{comment.id}}' class='comment_upvote'/>
+	<div class='comment_karma'>{{comment.karma}}</div>
+	<img src='{{ STATIC_URL }}images/faq/down2.png' id='comment_downvote_{{comment.id}}' class='comment_downvote'/>
+	<div class='comment_text'>{{comment.text}}</div>
+	
+	<div class='comment_below'>
+		<span id='comment_reply_{{comment.id}}'	class='comment_clickable comment_reply'>reply</span>
+		<span id='comment_load_{{comment.id}}' class='comment_clickable comment_load'>load/collapse</span>
+		<span class="comment_author">{{comment.author}}</span>
+	</div>
+	
+	<div id='comment_reply_field_{{comment.id}}' class='comment_reply_field'>
+		<textarea id='comment_reply_field_{{comment.id}}_text' class='comment_reply_field_text'>Enter Reply</textarea>
+		<span id='comment_reply_field_{{comment.id}}_submit' class='comment_clickable comment_reply_field_submit'>Submit</span> 
+	</div>
+</div>

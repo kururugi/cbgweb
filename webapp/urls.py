@@ -7,6 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^$', 'homepage.views.home_index', name="homepage-index"),
     url(r'^news/', include('blog.urls')),
+    url(r'^faq[/]?', include('faq.urls')),
     url(r'^contact[/]?', include('contact.urls')),
     url(r'^message/', include('stdmessage.urls')),
     url(r'^admin/', include(admin.site.urls)),

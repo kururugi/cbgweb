@@ -1,0 +1,85 @@
+.comment{
+	#min-height:110px;
+	margin-left:15px;
+	margin-right:15px;
+	overflow:hidden;
+	padding:0px;
+	margin-bottom:10px;
+	border:solid #FDC600 1px;
+	background-color:#444;
+	
+}
+.comment_text{
+	color:#ccc;
+	min-height:80px;
+	padding:5px;
+}
+.comment_below{
+	vertical-align:bottom;
+	margin:0px;
+	padding:5px;
+	color:#aaa;
+	background-color:#666;
+}
+.comment_author{
+	float:right;
+}
+.comment_reply{
+	margin-left:15px;
+}
+.comment_load{
+	margin-left:30px;
+}
+.comment_clickable:hover{
+	cursor:pointer;
+	-khtml-user-select:none;
+	opacity:.5;
+}
+.comment_reply_field{
+	display:none;#It doesn't show until they press reply!
+	height:200px;
+	margin-top:10px;
+	margin-left:15px;
+	margin-right:15px;
+	padding:5px;
+	padding-bottom:0px;
+	margin-bottom:20px;
+	border:#ccc dashed 1px;
+	background-color:#444;
+}
+.comment_reply_field_text{
+	height:120px;
+	width:100%;
+	border:none;
+	font-family:inherit;
+	background-color:#444;
+	color:#ccc;
+}
+.comment_reply_field_submit{
+	float:right;
+	color:#fff;
+}
+.comment_upvote{
+	float:right;
+	width:25px;
+	height:25px;
+	margin-top:7px;
+	margin-right:20px;
+}
+.comment_downvote{
+	clear:both;
+	float:right;
+	width:25px;
+	height:25px;
+	margin-right:20px;
+}
+.comment_karma{
+	clear:both;
+	float:right;
+	color:#ccc;
+	width:30px;
+	text-align:center;
+	margin-right:18px;
+	margin-top:4px;
+	margin-bottom:4px;
+}
