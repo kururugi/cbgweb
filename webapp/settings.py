@@ -10,8 +10,8 @@ TEMPLATE_DEBUG = DEBUG
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 #change this to your email
-EMAIL_HOST_USER = 'derp'#'zer000.cloudbyte@gmail.com'
-EMAIL_HOST_PASSWORD = 'herp'#open(os.path.join(PROJECT_DIR, "../.emailpwd")).read()
+EMAIL_HOST_USER = 'zer000.cloudbyte@gmail.com'
+EMAIL_HOST_PASSWORD = open(os.path.join(PROJECT_DIR, "../.emailpwd")).read()
 EMAIL_PORT = 587
 
 ADMINS = (
